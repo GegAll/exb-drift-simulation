@@ -8,14 +8,15 @@ This repository contains a Poisson solver, and more importantly, an electric fie
 
 The interaction between the electric field created by the potential difference and the magnetic field results in an ExB drift of the particles on the surface of the mask. The mask can take three different configurations: inwards, outwards, and straight. A pictorial representation of each mask is shown below:
 
+### Straight
 ![Maske_straight](https://github.com/GegAll/exb-drift-simulation/assets/170819708/79795bc4-0f4e-48c4-820d-845dadb1455c)
-Straight
 
+### Inwards
 ![Maske_inwards_better](https://github.com/GegAll/exb-drift-simulation/assets/170819708/0fcf6f5f-27ad-44e8-be59-4614a996692c)
-Inwards
 
+### Outwards
 ![Maske_outwards_better](https://github.com/GegAll/exb-drift-simulation/assets/170819708/55a8cee2-ef33-42c5-b0dc-37c6ebd655f6)
-Outwards
+
 
 ## Features
 
@@ -32,15 +33,13 @@ After compiling and running the program, it displays the number of iterations th
 
 The repository includes a visualizer for all three magnitudes. It plots the potential data as a filled contour plot, and both the electric field and ExB drift as 2D arrow fields, with a filled contour in the background showing the magnitude and direction of these vectors at each grid point. The `plt.quiver()` function is used for the arrow plots, and its features such as `headwidth=`, `headlength=`, and `scale=` can be adjusted for better visualization. The density of the arrows is controlled by the variables `step` and `step_drift`, where higher values result in fewer arrows, improving clarity.
 
-### Examples
-
 Some examples of the potential, electric field, and ExB drift for different mask structures are shown below:
 
-#### Inwards
+### Inwards
 ![potential_inwards_pot_2](https://github.com/GegAll/exb-drift-simulation/assets/170819708/f7d0ea1d-3de7-4795-a298-f16cc4403979)
 ![ExBDrift_E_inwards_pot_2](https://github.com/GegAll/exb-drift-simulation/assets/170819708/82da2989-b5a9-4e62-b453-1a771f124d03)
 
-#### Outwards
+### Outwards
 ![potential_outwards_pot_2](https://github.com/GegAll/exb-drift-simulation/assets/170819708/ab05e20c-a72a-46cd-8469-9836481e3ca0)
 ![ExBDrift_E_outwards_pot_2](https://github.com/GegAll/exb-drift-simulation/assets/170819708/3e540ee7-7ed9-47d6-a0f6-c8a75e4a5620)
 
