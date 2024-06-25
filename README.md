@@ -81,6 +81,12 @@ Some examples of the potential, electric field, and ExB drift for different mask
    ```sh
    If necessary change the filepahts to match where you saved the simulator and the visualizer in your PC
    ```
-   
+
+## Repository Structure
+
+- **potential_calculator.cpp**: The main C++ code for the Poisson solver and ExB drift simulation.
+- **ExB_visualizer.ipynb**: The Jupyter notebook for visualizing the potential, electric field, and ExB drift.
+- **requirements.txt**: List of required Python packages for the visualizer.
+
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
